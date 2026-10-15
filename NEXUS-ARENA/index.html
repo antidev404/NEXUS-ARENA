@@ -1,0 +1,263 @@
+<!--
+    NEXUS ARENA
+    Designed & Developed by antidev
+    © 2026 antidev
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS ARENA</title>
+</head>
+
+<body>
+<header class="navbar">
+
+    <div class="logo">
+        NEXUS <span>ARENA</span>
+    </div>
+
+    <nav>
+        <a href="#pcs">Компьютеры</a>
+        <a href="#prices">Цены</a>
+        <a href="#tournaments">Турниры</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="nav-button">Забронировать</button>
+
+</header>
+<section class="hero">
+    <div class="hero-content">
+
+        <p class="hero-label">КОМПЬЮТЕРНЫЙ КЛУБ • МОСКВА</p>
+
+        <h1>NEXUS <span>ARENA</span></h1>
+
+        <p class="hero-text">
+            Играй на мощных игровых ПК, участвуй в турнирах
+            и поднимай свой уровень.
+        </p>
+
+        <div class="hero-buttons">
+            <button>Забронировать место</button>
+            <button class="secondary-button">Посмотреть цены</button>
+        </div>
+
+    </div>
+</section>
+<section class="pcs" id="pcs">
+</section>
+    <h2>Наши компьютеры</h2>
+<p class="section-subtitle">
+    Выбирай уровень мощности под свою игру
+</p>
+    <div class="pc-list">
+
+        <div class="pc-card">
+            <h3>STANDARD</h3>
+            <p>RTX 4060 · 180 Hz</p>
+            <strong>150 ₽ / час</strong>
+        </div>
+
+        <div class="pc-card">
+            <h3>PRO</h3>
+            <p>RTX 4070 · 240 Hz</p>
+            <strong>250 ₽ / час</strong>
+        </div>
+
+        <div class="pc-card">
+            <h3>VIP</h3>
+            <p>RTX 4080 · 360 Hz</p>
+            <strong>400 ₽ / час</strong>
+        </div>
+
+    </div>
+</section>
+<section class="prices" id="prices">
+    <h2>Цены</h2>
+
+    <p class="section-subtitle">
+        Играй столько, сколько хочешь
+    </p>
+
+    <div class="price-list">
+
+        <div class="price-card">
+            <h3>1 час</h3>
+            <strong>150 ₽</strong>
+            <p>Стандартное место</p>
+            <button>Забронировать</button>
+        </div>
+
+        <div class="price-card featured">
+            <h3>3 часа</h3>
+            <strong>400 ₽</strong>
+            <p>Выгоднее на 50 ₽</p>
+            <button>Забронировать</button>
+        </div>
+
+        <div class="price-card">
+            <h3>5 часов</h3>
+            <strong>600 ₽</strong>
+            <p>Лучший вариант</p>
+            <button>Забронировать</button>
+        </div>
+
+    </div>
+</section>
+<section class="tournaments" id="tournaments">
+    <h2>Турниры</h2>
+
+    <p class="section-subtitle">
+        Соревнуйся с лучшими игроками
+    </p>
+
+    <div class="tournament-list">
+
+        <div class="tournament-card">
+            <span class="tournament-date">18 ОКТЯБРЯ</span>
+            <h3>CS2 — NIGHT CUP</h3>
+            <p>5×5 • 16 команд</p>
+            <strong>Призовой фонд — 30 000 ₽</strong>
+            <button>Участвовать</button>
+        </div>
+
+        <div class="tournament-card">
+            <span class="tournament-date">25 ОКТЯБРЯ</span>
+            <h3>CS2 — DUEL NIGHT</h3>
+            <p>1×1 • 32 игрока</p>
+            <strong>Призовой фонд — 15 000 ₽</strong>
+            <button>Участвовать</button>
+        </div>
+
+        <div class="tournament-card">
+            <span class="tournament-date">1 НОЯБРЯ</span>
+            <h3>VALORANT CUP</h3>
+            <p>5×5 • 16 команд</p>
+            <strong>Призовой фонд — 25 000 ₽</strong>
+            <button>Участвовать</button>
+        </div>
+
+    </div>
+</section>
+<section class="contacts" id="contacts">
+    <h2>Контакты</h2>
+
+    <p class="section-subtitle">
+        Мы ждём тебя в NEXUS ARENA
+    </p>
+
+    <div class="contact-list">
+
+        <div class="contact-card">
+            <span>📍</span>
+            <h3>Адрес</h3>
+            <p>Москва, ул. Геймерская, 15</p>
+        </div>
+
+        <div class="contact-card">
+            <span>📱</span>
+            <h3>Телефон</h3>
+            <p>+7 (999) 123-45-67</p>
+        </div>
+
+        <div class="contact-card">
+            <span>💬</span>
+            <h3>Telegram</h3>
+            <p>@nexus_arena</p>
+        </div>
+
+        <div class="contact-card">
+            <span>🕐</span>
+            <h3>Режим работы</h3>
+            <p>Круглосуточно</p>
+        </div>
+
+    </div>
+
+    <button class="contact-button">Забронировать место</button>
+</section>
+
+
+
+
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">×</button>
+
+        <h2>Забронировать место</h2>
+
+        <input type="text" id="bookingName" placeholder="Ваше имя">
+
+        <input type="tel" id="bookingPhone" placeholder="Номер телефона">
+
+        <select id="bookingTariff">
+            <option value="">Выберите тариф</option>
+            <option value="1 час — 150 ₽">1 час — 150 ₽</option>
+            <option value="3 часа — 400 ₽">3 часа — 400 ₽</option>
+            <option value="5 часов — 600 ₽">5 часов — 600 ₽</option>
+        </select>
+
+        <button id="submitBooking">Отправить заявку</button>
+
+        <p id="bookingMessage"></p>
+
+    </div>
+</div>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            NEXUS <span>ARENA</span>
+        </div>
+
+        <p>Компьютерный клуб нового поколения</p>
+
+        <div class="footer-links">
+            <a href="#pcs">Компьютеры</a>
+            <a href="#prices">Цены</a>
+            <a href="#tournaments">Турниры</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 antidev - NEXUS ARENA. Все права защищены.
+    </div>
+
+</footer>
+<a href="https://t.me/nexus_arena" class="telegram-button" target="_blank">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21.5 3.5 18.3 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.7 13.7.8 12.2c-1.1-.3-1.1-1.1.2-1.6L20.2 3c.9-.3 1.7.2 1.3.5Z"/>
+    </svg>
+</a>
+<div class="modal" id="tournamentModal">
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeTournamentModal">×</button>
+
+        <h2>Участие в турнире</h2>
+
+        <input type="text" id="tournamentName" placeholder="Ваше имя">
+
+        <input type="tel" id="tournamentPhone" placeholder="Номер телефона">
+
+        <input type="text" id="selectedTournament" readonly>
+
+        <button id="submitTournament">Подать заявку</button>
+
+        <p id="tournamentMessage"></p>
+
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>

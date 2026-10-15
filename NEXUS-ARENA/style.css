@@ -1,0 +1,882 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #08090d;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #a0a0a0;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 30px;
+
+    background: #7c3aed;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9333ea;
+    transform: scale(1.05);
+}
+h1 span {
+    color: #a855f7;
+}
+.pcs {
+    margin-top: 100px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.pcs h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.pc-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pc-card {
+    flex: 1;
+    padding: 30px;
+    background: #11121a;
+    border: 1px solid #29293a;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.pc-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+}
+
+.pc-card h3 {
+    color: #a855f7;
+    font-size: 24px;
+}
+
+.pc-card p {
+    color: #aaa;
+}
+
+.pc-card strong {
+    font-size: 22px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(8, 9, 13, 0.85);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #242432;
+    z-index: 3000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.nav-button {
+    margin: 0;
+    padding: 12px 20px;
+    background: #a855f7;
+}
+
+.nav-button:hover {
+    background: #9333ea;
+}
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at center, #351052 0%, #08090d 60%);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.hero-label {
+    color: #c084fc;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 110px);
+    margin: 0;
+    line-height: 1;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 30px auto;
+    color: #aaa;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons button {
+    margin-top: 0;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 1px solid #444;
+}
+
+.secondary-button:hover {
+    background: #171722;
+    border-color: #a855f7;
+}
+.section-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin: 10px 0 30px;
+    font-size: 18px;
+}
+
+.pc-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pc-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 255, 0.25);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pc-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.35);
+}
+
+.pc-card h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.pc-card p {
+    color: #bbb;
+    font-size: 17px;
+}
+
+.pc-card strong {
+    display: block;
+    color: #ff00ff;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.prices {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.price-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 255, 0.25);
+    border-radius: 18px;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.35);
+}
+
+.price-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price-card strong {
+    display: block;
+    color: #ff00ff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.price-card p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.price-card button {
+    margin-top: 0;
+}
+.tournaments {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.tournament-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.tournament-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 255, 0.25);
+    border-radius: 18px;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.tournament-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff00ff;
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.35);
+}
+
+.tournament-date {
+    color: #c084fc;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tournament-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.tournament-card p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.tournament-card strong {
+    display: block;
+    color: #ff00ff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tournament-card button {
+    margin-top: 0;
+}
+.contacts {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 255, 0.25);
+    border-radius: 18px;
+    padding: 25px 15px;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff00ff;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.3);
+}
+
+.contact-card span {
+    font-size: 30px;
+}
+
+.contact-card h3 {
+    margin: 15px 0 10px;
+}
+
+.contact-card p {
+    color: #aaa;
+    margin: 0;
+}
+
+.contact-button {
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+}
+
+.modal-content {
+    position: relative;
+    width: min(90%, 450px);
+    padding: 35px;
+    box-sizing: border-box;
+    background: #101018;
+    border: 1px solid #a855f7;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.35);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background: #181822;
+    color: white;
+    border: 1px solid #333344;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+    border-color: #a855f7;
+}
+
+.modal-content select {
+    cursor: pointer;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: white;
+    background: transparent;
+}
+
+#submitBooking {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#bookingMessage {
+    margin: 15px 0 0;
+    color: #c084fc;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3000;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.nav-button {
+    display: block;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(8, 9, 13, 0.92);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #242432;
+    z-index: 3000;
+}
+
+.navbar .logo {
+    flex-shrink: 0;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #aaa;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar .nav-button {
+    flex-shrink: 0;
+    margin: 0;
+}
+.navbar {
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 70px !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+}
+
+.navbar .logo {
+    justify-self: start !important;
+}
+
+.navbar nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px !important;
+}
+
+.navbar .nav-button {
+    justify-self: end !important;
+    margin: 0 !important;
+}
+max-width: 768px {
+
+    .navbar {
+        padding: 0 20px !important;
+    }
+
+    .navbar nav {
+        display: none !important;
+    }
+
+    .navbar .nav-button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .hero-content {
+        padding: 100px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .pc-list,
+    .price-list,
+    .tournament-list,
+    .contact-list {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .pcs,
+    .prices,
+    .tournaments,
+    .contacts {
+        padding: 70px 20px;
+    }
+}
+.footer {
+    padding: 60px 20px 25px;
+    background: #08090d;
+    border-top: 1px solid #242432;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #a855f7;
+}
+
+.footer-content > p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #a855f7;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #1c1c27;
+    color: #555;
+    font-size: 14px;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #a855f7;
+    opacity: 0.12;
+    filter: blur(140px);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    text-shadow: 0 0 30px rgba(168, 85, 247, 0.35);
+}
+
+.hero-buttons button {
+    transition: 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.25);
+}
+.pc-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.pc-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #a855f7;
+    transition: 0.5s;
+}
+
+.pc-card:hover::before {
+    left: 100%;
+}
+
+.pc-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+.price-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.price-card strong {
+    text-shadow: 0 0 15px rgba(255, 0, 255, 0.45);
+}
+
+.price-card button {
+    transition: 0.3s ease;
+}
+
+.price-card:hover button {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+.price-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+.price-card.featured {
+    border-color: #a855f7;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+    transform: scale(1.04);
+}
+
+.price-card.featured::after {
+    content: "ЛУЧШИЙ ВЫБОР";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    background: #a855f7;
+    color: white;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.telegram-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #229ED9;
+    color: white;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 25px;
+
+    box-shadow: 0 0 20px rgba(34, 158, 217, 0.45);
+
+    z-index: 1500;
+
+    transition: 0.3s ease;
+}
+
+.telegram-button svg {
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+max-width: 768px {
+
+    .navbar {
+        padding: 0 20px;
+        height: 65px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .navbar .nav-button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        padding: 100px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: clamp(45px, 14vw, 75px);
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .pc-list,
+    .price-list,
+    .tournament-list {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .prices,
+    .tournaments,
+    .contacts {
+        padding: 70px 20px;
+    }
+
+    .telegram-button {
+        right: 18px;
+        bottom: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
